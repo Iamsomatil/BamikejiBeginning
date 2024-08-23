@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>BAMIKEJI Memories</h1>
+      <p>Celebrated on August 23rd, 2024 at so so so Event Center, Ifo</p>
+    </header>
+    <div id="imageContainer"></div>
+    <main>
+      <div class="instructions">
+        <p>
+          We are thrilled to share this special day with you! Please help us
+          capture the beautiful moments by uploading your favorite pictures from
+          the wedding.
+        </p>
+        <p>
+          Click the "Choose Files" button to select your photos, and then click
+          "Upload Images" to add them to our memory gallery.
+        </p>
+      </div>
+      <div class="upload-container">
+        <input type="file" id="fileInput" accept="image/*" multiple />
+        <button onclick="uploadImages()">Upload Images</button>
+      </div>
+      <div class="gallery" id="gallery"></div>
+    </main>
+    <footer>
+      <p>Thank you for being a part of our special day!</p>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-analytics.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
